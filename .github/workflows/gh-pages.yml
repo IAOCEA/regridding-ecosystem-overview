@@ -64,7 +64,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs/_build/html
-          name: preview
+          name: build
 
   preview:
     if: github.event_name == 'pull_request'
@@ -76,7 +76,7 @@ jobs:
       - name: Download Pages Artifact
         uses: actions/download-artifact@v4
         with:
-          name: preview
+          name: build
 
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
