@@ -5,7 +5,6 @@ __pycache__/
 
 # pixi environments
 .pixi
-pixi.lock
 
 # tool caches
 /.prettier_cache/
