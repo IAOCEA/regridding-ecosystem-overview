@@ -41,7 +41,7 @@ jobs:
 
       - name: Build JupyterBook
         run: |
-          jupyter-book build . --warningiserror --keep-going --builder html
+          jupyter-book build regridding-ecosystem-overview --warningiserror --keep-going --builder html
 
       - name: Dump Build Logs
         if: always()
