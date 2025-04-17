@@ -46,10 +46,11 @@ jobs:
       - name: Dump Build Logs
         if: always()
         run: |
-          [ -d docs/_build/html/reports ] \
-          && find docs/_build/html/reports \
-              -name "*.log" \
-              -exec sh -c 'echo "logs from: $(basename {})\n———————————————————"; cat "{}"' \;
+          if [[ -d docs/_build/html/reports ]]; then
+            find docs/_build/html/reports \
+                -name "*.log" \
+                -exec sh -c 'echo "logs from: $(basename {})\n———————————————————"; cat "{}"' \;
+          fi
 
       - name: Upload Built Page
         if: github.event_name == 'pull_request'
