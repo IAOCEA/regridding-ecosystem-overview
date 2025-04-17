@@ -86,7 +86,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build
-          path: docs/_build/
+          path: docs/_build/html/
 
       - name: check directory
         run: |
