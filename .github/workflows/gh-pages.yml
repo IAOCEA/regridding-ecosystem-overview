@@ -57,7 +57,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: build
-          path: docs/_build/html
+          path: docs/_build/html/*
 
       - name: Upload Pages Artifact
         if: github.event_name == 'push'
@@ -77,6 +77,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build
+          path: ./html/
 
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
