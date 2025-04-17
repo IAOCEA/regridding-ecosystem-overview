@@ -1,5 +1,1 @@
 # Regridding between grids
-
-```{tableofcontents}
-
-```
