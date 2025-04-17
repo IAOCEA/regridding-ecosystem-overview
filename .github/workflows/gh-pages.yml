@@ -46,8 +46,8 @@ jobs:
       - name: Dump Build Logs
         if: always()
         run: |
-          find . -type d
-          find docs/_build/html/reports \
+          [ -d docs/_build/html/reports ] \
+          && find docs/_build/html/reports \
               -name "*.log" \
               -exec sh -c 'echo "logs from: $(basename {})\n———————————————————"; cat "{}"' \;
 
