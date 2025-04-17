@@ -23,7 +23,7 @@ bibtex_bibfiles:
 # Information about where the book exists on the web
 repository:
   url: https://github.com/iaocea/regridding-ecosystem-overview
-  path_to_book: regridding-ecosystem-overview
+  path_to_book: docs
   branch: main
 
 # Add GitHub buttons to your book

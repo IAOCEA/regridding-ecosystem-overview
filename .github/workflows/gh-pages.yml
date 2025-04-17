@@ -29,7 +29,7 @@ jobs:
       - name: Setup JupyterBook cache
         uses: actions/cache@v4
         with:
-          path: regridding-ecosystem-overview/_build
+          path: docs/_build
           key: jupyterbook
 
       - name: Setup environment
@@ -41,12 +41,12 @@ jobs:
 
       - name: Build JupyterBook
         run: |
-          jupyter-book build regridding-ecosystem-overview --warningiserror --keep-going --builder html
+          jupyter-book build docs --warningiserror --keep-going --builder html
 
       - name: Dump Build Logs
         if: always()
         run: |
-          find regridding-ecosystem-overview/_build/html/reports \
+          find docs/_build/html/reports \
               -name "*.log" \
               -exec sh -c 'echo "logs from: $(basename {})\n———————————————————"; cat "{}"' \;
 
@@ -55,13 +55,13 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: build
-          path: regridding-ecosystem-overview/_build/html
+          path: docs/_build/html
 
       - name: Upload Pages Artifact
         if: github.event_name == 'push'
         uses: actions/upload-pages-artifact@v3
         with:
-          path: regridding-ecosystem-overview/_build/html
+          path: docs/_build/html
           name: preview
 
   preview:
