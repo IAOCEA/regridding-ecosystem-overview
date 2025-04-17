@@ -72,6 +72,11 @@ jobs:
         with:
           name: preview
 
+      - name: Deploy preview
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: ./html/
+
   deploy:
     if: github.event_name == "push"
     runs-on: ubuntu-latest
