@@ -88,6 +88,10 @@ jobs:
           name: build
           path: docs/_build/
 
+      - name: check directory
+        run: |
+          find . -type d
+
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
         with:
