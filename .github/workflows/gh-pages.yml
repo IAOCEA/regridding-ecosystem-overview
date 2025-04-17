@@ -57,7 +57,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: build
-          path: docs/_build/html/*
+          path: docs/_build/html
 
       - name: Upload Pages Artifact
         if: github.event_name == 'push'
@@ -73,16 +73,19 @@ jobs:
     needs: build
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
       - name: Download Pages Artifact
         uses: actions/download-artifact@v4
         with:
           name: build
-          path: ./html/
+          path: docs/_build/
 
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
         with:
-          source-dir: ./html/
+          source-dir: docs/_build/html/
 
   deploy:
     if: github.event_name == 'push'
