@@ -65,7 +65,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs/_build/html
-          name: build
+          name: github-pages
 
   preview:
     if: github.event_name == 'pull_request'
