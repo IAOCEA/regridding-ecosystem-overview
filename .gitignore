@@ -13,3 +13,6 @@ pixi.lock
 # jupyter
 .ipynb_checkpoints/
 .virtual_documents/
+
+# jupyter book
+_build/
