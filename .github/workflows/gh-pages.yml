@@ -7,6 +7,11 @@ on:
   pull_request:
     branches:
       - "main"
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - closed
   workflow_dispatch:
 
 permissions:
@@ -40,6 +45,7 @@ jobs:
           cache-write: ${{ github.event_name == 'push' && github.ref_name == 'main' }}
 
       - name: Build JupyterBook
+        if: github.event.action != 'closed'
         run: |
           jupyter-book build docs --warningiserror --keep-going --builder html
 
