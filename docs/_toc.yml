@@ -7,5 +7,5 @@ parts:
   - caption: Regridding
     chapters:
       - file: regridding/index
-      - file: regridding/xesmf-h3
-      - file: regridding/xesmf-healpix
+      #- file: regridding/xesmf-h3
+      #- file: regridding/xesmf-healpix
