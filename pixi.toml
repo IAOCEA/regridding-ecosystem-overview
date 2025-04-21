@@ -28,3 +28,19 @@ distributed = ">=2025.3.0,<2026"
 dask-labextension = ">=7.0.0,<8"
 cartopy = ">=0.24.0,<0.25"
 jupyter-book = ">=1.0.4.post1,<2"
+jupyterlab-myst = ">=2.4.2,<3"
+pystac-client = ">=0.8.6,<0.9"
+xpystac = ">=0.2.0,<0.3"
+s3fs = ">=2025.3.2,<2026"
+odc-geo = ">=0.4.10,<0.5"
+stackstac = ">=0.5.1,<0.6"
+folium = ">=0.19.5,<0.20"
+sparse = "0.15.*"
+opt-einsum = ">=3.4.0,<4"
+
+[system-requirements]
+libc = { family = "glibc", version = "2.35" }
+
+[pypi-dependencies]
+grid-weights = ">=0.2.0, <0.3"
+geoarrow-rust-core = "==0.4.0b3"
