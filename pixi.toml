@@ -44,3 +44,4 @@ libc = { family = "glibc", version = "2.35" }
 [pypi-dependencies]
 grid-weights = ">=0.2.0, <0.3"
 geoarrow-rust-core = "==0.4.0b3"
+grid-indexing = ">=0.1.1, <0.2"
