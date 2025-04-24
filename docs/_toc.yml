@@ -9,3 +9,4 @@ parts:
       - file: regridding/index
       - file: regridding/xesmf-h3
       - file: regridding/xesmf-healpix
+      - file: regridding/grid-weights-healpix
