@@ -7,6 +7,7 @@ This Jupyter Book explores and evaluates different regridding libraries in the P
 Regridding (or resampling/remapping) is a crucial preprocessing step in geosciences to allow for data comparison across different spatial grids. In this project, we compare multiple Python-based libraries (such as **XESMF**, **Uxarray**, and **grid-weights**) for their ability to perform offline, area-based interpolation to and from DGGS.
 
 This work is part of a collaboration between:
+
 - **LOPS (Univ Brest–Ifremer–CNRS–IRD, France)**
 - **CNES (Centre National d’Études Spatiales, France)**
 - **Development Seed (USA)**
@@ -14,6 +15,7 @@ This work is part of a collaboration between:
 ## 📂 Contents
 
 The book is organized into the following chapters:
+
 - Overview of regridding and grid types
 - Regridding to H3 with XESMF
 - Regridding to HEALPix with XESMF
@@ -37,7 +39,7 @@ To build and serve the Jupyter Book locally:
 ```bash
 # Create and activate a virtual environment (optional but recommended)
 python -m venv .venv
-source .venv/bin/activate 
+source .venv/bin/activate
 
 # Install dependencies using PEP 621 (pyproject.toml)
 pip install .

@@ -26,7 +26,7 @@ This book is divided into the following sections:
 
 ## Citation
 
-This work is developed by researchers at LOPS, CNES, and Development Seed {cite:p}`magin2025`.  
+This work is developed by researchers at LOPS, CNES, and Development Seed {cite:p}`magin2025`.
 
 ## References
 
