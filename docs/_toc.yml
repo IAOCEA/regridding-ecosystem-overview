@@ -3,11 +3,9 @@
 
 format: jb-book
 root: intro
-parts:
-  - caption: Regridding
-    chapters:
-      - file: regridding/index
-      - file: regridding/xesmf-h3
-      - file: regridding/xesmf-healpix
-      - file: regridding/uxarray-healpix
-      - file: regridding/grid-weights-healpix
+chapters:
+    - file: regridding/index
+    - file: regridding/xesmf-h3
+    - file: regridding/xesmf-healpix
+    - file: regridding/uxarray-healpix
+    - file: regridding/grid-weights-healpix
