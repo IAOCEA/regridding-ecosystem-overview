@@ -20,3 +20,11 @@ Rectilinear grids arrange the sampling points along lines along the coordinate a
 If the distance between the points is constant along both coordinate axes, the grid is called "regular".
 
 <!-- Add a graphic describing the grid -->
+
+### Curvilinear Grids
+
+Curvilinear grids look just like rectilinear grids, except that the arrangement of points does not follow straight lines anymore. This is often the effect of expressing the sampling points in a different projection.
+
+Since the grid points don't stay on the coordinate axes anymore, we need to store the coordinates as two 2D arrays.
+
+<!-- Add a graphic describing the grid -->
