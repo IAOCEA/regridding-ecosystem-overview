@@ -4,10 +4,13 @@
 format: jb-book
 root: intro
 chapters:
-  - caption: Grids and Grid Types
-    file: grid-types/index
-  - caption: Regridding software
-    file: regridding/index
+  - file: grid-types/index
+    sections:
+      - file: grid-types/rectilinear
+      - file: grid-types/curvilinear
+      - file: grid-types/dggs
+      - file: grid-types/unstructured
+  - file: regridding/index
     sections:
       - file: regridding/xesmf-h3
       - file: regridding/xesmf-healpix
