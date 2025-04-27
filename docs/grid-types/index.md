@@ -30,3 +30,11 @@ Curvilinear grids look just like rectilinear grids, except that the arrangement 
 Since the grid points don't stay on the coordinate axes anymore, we need to store the coordinates as two 2D arrays.
 
 <!-- Add a graphic describing the grid -->
+
+### Discrete Global Grid Systems
+
+Projection-based grids have increasingly distorted grid cells the further away from the projection center / line they are.
+
+Discrete global grid systems (DGGS) aim to minimize the distortion by approximating the surface of the earth (usually a sphere) by evenly subdividing it into planar faces. These faces are then recursively subdivided to form a hierarchy / tree of cells.
+
+There is (in general) no way to arrange these faces into a two-dimensional grid, and thus in-memory we have to represent these as a 1D array (a list of cells).
