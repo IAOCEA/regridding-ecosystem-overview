@@ -12,3 +12,11 @@ Various kinds grids exist, but can be broadly divided into 4 categories:
 - curvilinear grids
 - discrete global grid systems (DGGS)
 - unstructured grids
+
+### Rectilinear Grids
+
+Rectilinear grids arrange the sampling points along lines along the coordinate axes of a projection, forming rectangular cells. This allows us to describe the grid using 1D coordinates.
+
+If the distance between the points is constant along both coordinate axes, the grid is called "regular".
+
+<!-- Add a graphic describing the grid -->
