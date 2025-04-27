@@ -3,9 +3,14 @@
 
 format: jb-book
 root: intro
-chapters:
-  - file: regridding/index
-  - file: regridding/xesmf-h3
-  - file: regridding/xesmf-healpix
-  - file: regridding/uxarray-healpix
-  - file: regridding/grid-weights-healpix
+parts:
+  - caption: Grids and Grid Types
+    chapters:
+      - file: grid-types/index
+  - caption: Regridding software
+    chapters:
+      - file: regridding/index
+      - file: regridding/xesmf-h3
+      - file: regridding/xesmf-healpix
+      - file: regridding/uxarray-healpix
+      - file: regridding/grid-weights-healpix
