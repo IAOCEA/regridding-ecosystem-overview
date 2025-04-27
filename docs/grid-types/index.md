@@ -1,6 +1,6 @@
 # Geospatial grids
 
-In the geosciences, a lot of data describes continuous surfaces and is stored in a discretized form (as a lot of real numbers that contain the evaluation at certain sampling points). In the following, we'll call the choice of where to evaluate these surfaces a "grid".
+In the geosciences, a lot of data describes continuous surfaces and is stored in a discretized form (as a lot of real numbers that contain the evaluation at certain sampling points). In the following, we'll call the choice of where to evaluate these surfaces a "grid", and only look at horizontal ("spatial") grids.
 
 ## Grid Types
 
