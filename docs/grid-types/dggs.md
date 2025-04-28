@@ -1,5 +1,10 @@
 # Discrete Global Grid Systems
 
+```{image} ./dggs.png
+:width: 160pt
+:align: center
+```
+
 Projection-based grids have increasingly distorted grid cells the further away from the projection center / line they are.
 
 Discrete global grid systems (DGGS) aim to minimize the distortion by approximating the surface of the earth (usually a sphere) by evenly subdividing it into planar faces. These faces are then recursively subdivided to form a hierarchy / tree of cells.
