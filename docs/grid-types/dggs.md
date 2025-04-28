@@ -1,8 +1,11 @@
 # Discrete Global Grid Systems
 
-```{image} ./dggs.png
-:width: 160pt
-:align: center
+```{figure} ./dggs.png
+---
+width: 160pt
+align: center
+---
+The local grid structure of a hexagonal DGGS
 ```
 
 Projection-based grids have increasingly distorted grid cells the further away from the projection center / line they are.
