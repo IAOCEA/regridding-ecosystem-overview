@@ -1,8 +1,11 @@
 # Rectilinear Grids
 
-```{image} ./regular.png
-:width: 160pt
-:align: center
+```{figure} ./regular.png
+---
+width: 160pt
+align: center
+---
+A regular grid with constant-sized grids.
 ```
 
 Rectilinear grids arrange the sampling points along lines along the coordinate axes of a projection, forming rectangular cells. This allows us to describe the grid using 1D coordinates.
