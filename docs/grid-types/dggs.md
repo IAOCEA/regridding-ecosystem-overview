@@ -18,7 +18,7 @@ There is (in general) no way to arrange these cells into two dimensions that enc
 
 HEALPix (Hierarchical Equal-Area iso-Latitude Pixelization) has been developed for use in astronomy (cosmology). It divides the earth into 12 spherical rectangles (the "base pixels" or "base cells"), which are arranged in 3 rings with constant latitude. This means that there are four rectangles each that touch the poles, and there are another four that are centered around the equator. When going to a higher resolution, each side of the rectangle is subdivided by a constant factor $n_{\mathrm{side}}$ (most commonly set to 2), resulting in $n_{\mathrm{side}}^2$ new cells. All of these are also on rings of constant latitudes.
 
-```{figure} https://healpix.sourceforge.io/images/gorski_f1.jpg
+```{figure} healpix.jpg
 ---
 width: 200pt
 align: center
